@@ -1,16 +1,15 @@
 #!/bin/bash
 
-# Check if rye is installed
-if ! command -v rye &> /dev/null
+# Check if uv is installed
+if ! command -v uv &> /dev/null
 then
-    echo "Rye is not installed. Installing Rye..."
+    echo "uv is not installed. Installing Uv..."
     # Install Rye (replace with the actual installation command if different)
-    curl -sSL https://install.rye-lang.org | bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
     # Add Rye to PATH (adjust the path according to the installation instructions)
-    export PATH="$HOME/.rye/bin:$PATH"
-    echo "Rye installed successfully."
+    echo "uv installed successfully."
 else
-    echo "Rye is already installed."
+    echo "uv is already installed."
 fi
 
 # Check if task is installed
@@ -26,6 +25,6 @@ else
     echo "Task is already installed."
 fi
 
-# Run rye init
-echo "Running rye init..."
-rye init
+# Run uv init
+echo "Running uv init..."
+uv init
