@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    fix:
+      run: |
+        pixi run fix
+        git add {staged_files}
+
+post-merge:
+  parallel: true
+  commands:
+    init:
+      run: pixi run init
