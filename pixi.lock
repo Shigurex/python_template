@@ -161,7 +161,7 @@ packages:
 - pypi: .
   name: python-template
   version: 0.1.0
-  sha256: e5013d1a2d419332fcd3582500b0ca632bcb2981757a061616433f70a54319a5
+  sha256: 6e65fbe477681d6f2e771f0ae633545541cab2e5df079d2181adea25212689d1
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/python_abi-3.13-5_cp313.conda

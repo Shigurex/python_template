@@ -17,6 +17,9 @@ platforms = ["osx-arm64"]
 python_template = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+check = "pixi run ruff check"
+fix = "pixi run ruff check --fix"
+init = "pixi install"
 
 [tool.pixi.dependencies]
 python = ">=3.13.1,<3.14"

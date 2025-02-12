@@ -3,11 +3,11 @@ pre-commit:
   commands:
     fix:
       run: |
-        pixi run fix
+        pixi run ruff check --fix
         git add {staged_files}
 
 post-merge:
   parallel: true
   commands:
     init:
-      run: pixi run init
+      run: pixi install
