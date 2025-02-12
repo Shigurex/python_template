@@ -1,24 +1,11 @@
-# Python Template for Rye
+# Python Template for Pixi
 
 ## Installation
-For a easy startup, execute following command to setup.
-```sh
-# Run following command to download requirements
-$ bash entrypoint.sh
-```
+Following package management system has to be installed previously.
 
-If you want to download external package on its own, you could download followings from the official page and execute following command to setup.
+- Pixi (https://pixi.sh/latest/)
 
-- Rye (https://rye.astral.sh/guide/installation/)
-- Taskfile (https://taskfile.dev/installation/)
-
-```sh
-# Run following command to download requirements
-$ rye init
-```
-
-## Usage
 ```sh
 # Download packages based on dependencies
-$ task init
+$ pixi install
 ```
